@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <h1 class="logo">🍕 Napoli's Oven</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html" class="active">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-content">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+
+  <div id="empty-message" class="empty-message" style="display:none;">
+    Your cart is empty.
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <button id="proceed-btn" class="btn-download">Order now</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Napoli’s Oven – Fresh from our oven to your table.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>ISLAND-WIDE Pizza Delivery</span>
+      <div class="top-right">
+        <a href="login.html">Login / Register</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">🍕 Napoli's Oven</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html" class="active">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+           <li><a href="about.html">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Nav -->
+  <header class="navbar">
+    <div class="container">
+      <div class="search-container">
+        <select>
+          <option>All</option>
+          <option>Classic</option>
+          <option>Veggie</option>
+          <option>Meat</option>
+        </select>
+        <select>
+          
+          <option>small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+        <input type="text" placeholder="I'm looking for..." />
+        <button>Search</button>
+      </div>
+      <div class="nav-icons">
+        <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+        <a href="login.html">👤 Log in</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- B P -->
+  <section class="home-intro animate-on-scroll">
+    <h2>Order Pizza</h2>
+    <div class="card-container">
+    <div class="p-card">
+  <img src="images/p11.jpg" alt="Margherita" />
+  <h3>Margherita</h3>
+  <p>Classic tomato, mozzarella, and fresh basil.</p>
+  <p>$11.00</p>
+  <button class="add-cart" data-name="Margherita" data-price="11.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p12.jpg" alt="Pepperoni Inferno" />
+  <h3>Pepperoni Inferno</h3>
+  <p>Spicy double pepperoni and chili flakes.</p>
+  <p>$13.00</p>
+  <button class="add-cart" data-name="Pepperoni Inferno" data-price="13.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p13.jpg" alt="Garden Delight" />
+  <h3>Garden Delight</h3>
+  <p>Mushrooms, peppers, onions, and olives.</p>
+  <p>$10.00</p>
+  <button class="add-cart" data-name="Garden Delight" data-price="10.00">Add to Cart</button>
+</div>
+
+<div class ="p-card">
+  <img src="images/p14.jpg" alt="BBQ Chicken" />
+  <h3>BBQ Chicken</h3>
+  <p>Grilled chicken, red onion, and BBQ sauce.</p>
+  <p>$12.00</p>
+  <button class="add-cart" data-name="BBQ Chicken" data-price="12.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p15.jpeg" alt="Quattro Formaggi" />
+  <h3>Quattro Formaggi</h3>
+  <p>Mozzarella, gorgonzola, parmesan, fontina.</p>
+  <p>$13.50</p>
+  <button class="add-cart" data-name="Quattro Formaggi" data-price="13.50">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p16.jpeg" alt="Hawaiian" />
+  <h3>Hawaiian</h3>
+  <p>Ham and pineapple with mozzarella.</p>
+  <p>$12.00</p>
+  <button class="add-cart" data-name="Hawaiian" data-price="12.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p17.jpg" alt="Spicy Veggie" />
+  <h3>Spicy Veggie</h3>
+  <p>Jalapeños, onions, peppers, spicy tomato base.</p>
+  <p>$13.50</p>
+  <button class="add-cart" data-name="Spicy Veggie" data-price="13.50">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p18.avif" alt="Meat Feast" />
+  <h3>Meat Feast</h3>
+  <p>Pepperoni, sausage, bacon, and beef.</p>
+  <p>$14.00</p>
+  <button class="add-cart" data-name="Meat Feast" data-price="14.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p19.jpg" alt="Truffle Mushroom" />
+  <h3>Truffle Mushroom</h3>
+  <p>Wild mushrooms, truffle oil, creamy cheese base.</p>
+  <p>$12.00</p>
+  <button class="add-cart" data-name="Truffle Mushroom" data-price="12.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p20.webp" alt="Chicken Pesto" />
+  <h3>Chicken Pesto</h3>
+  <p>Grilled chicken, pesto drizzle, mozzarella.</p>
+  <p>$14.00</p>
+  <button class="add-cart" data-name="Chicken Pesto" data-price="14.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p21.webp" alt="Spinach & Feta" />
+  <h3>Spinach & Feta</h3>
+  <p>Fresh spinach, crumbled feta, garlic oil.</p>
+  <p>$13.00</p>
+  <button class="add-cart" data-name="Spinach & Feta" data-price="13.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p22.jpg" alt="Bacon Lovers" />
+  <h3>Bacon Lovers</h3>
+  <p>Crispy bacon, mozzarella, smoky tomato sauce.</p>
+  <p>$15.00</p>
+  <button class="add-cart" data-name="Bacon Lovers" data-price="15.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p23.webp" alt="Cheese Burst" />
+  <h3>Cheese Burst</h3>
+  <p>Extra molten cheese filling the crust and center.</p>
+  <p>$18.00</p>
+  <button class="add-cart" data-name="Cheese Burst" data-price="18.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p24.jpg" alt="Mexican Heat" />
+  <h3>Mexican Heat</h3>
+  <p>Beans, jalapeños, corn, and spicy salsa sauce.</p>
+  <p>$17.00</p>
+  <button class="add-cart" data-name="Mexican Heat" data-price="17.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p25.jpeg" alt="Tandoori Paneer" />
+  <h3>Tandoori Paneer</h3>
+  <p>Indian-style grilled paneer, onions, and herbs.</p>
+  <p>$14.00</p>
+  <button class="add-cart" data-name="Tandoori Paneer" data-price="14.00">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p29.jpg" alt="White Pizza" />
+  <h3>White Pizza</h3>
+  <p>Garlic cream sauce, mozzarella, ricotta, spinach.</p>
+  <p>$15.50</p>
+  <button class="add-cart" data-name="White Pizza" data-price="15.50">Add to Cart</button>
+</div>
+
+<div class="p-card">
+  <img src="images/p26.jpg" alt="Broccoli Cheddar" />
+  <h3>Broccoli Cheddar</h3>
+  <p>Roasted broccoli, cheddar blend, and olive oil.</p>
+  <p>$18.00</p>
+  <button class="add-cart" data-name="Broccoli Cheddar" data-price="18.00">Add to Cart</button>
+</div>
+</section>
+
+ <!-- orderr Modal -->
+  <div id="order-modal" style="display: none; position: fixed; top: 0; left: 0; 
+    width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center;">
+    <div style="background: #fff; padding: 30px; border-radius: 10px; text-align: center; width: 300px;">
+      <h3>Select Date & Time</h3>
+      <input type="date" id="order-date" required><br><br>
+      <input type="time" id="order-time" required><br><br>
+      <button id="confirm-order-btn" class="btn-download">Confirm</button>
+      <button id="cancel-order-btn" style="margin-left: 10px;">Cancel</button>
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <p>&copy;2025 Napoli’s Oven – Fresh from our oven to your table.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

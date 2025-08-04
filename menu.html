@@ -1,0 +1,88 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Napoli's Oven - Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">🍕 Napoli's Oven</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="home-intro">
+    <h2>Our Pizza Menu</h2>
+    <p>Choose your category: Classic, Veggie, or Meat Lovers!</p>
+
+    <div class="card-container">
+      <div class="p-card">
+        <img src="images/p2.jpeg" alt="Classic Pizza" />
+        <h3>Classic</h3>
+        <a href="#" class="btn-download view-pizza" data-category="classic">View pizzas</a>
+      </div>
+
+      <div class="p-card">
+        <img src="images/p3.webp" alt="Veggie Pizza" />
+        <h3>Veggie</h3>
+        <a href="#" class="btn-download view-pizza" data-category="veggie">View pizzas</a>
+      </div>
+
+      <div class="p-card">
+        <img src="images/p4.jpg" alt="Meat Lover Pizza" />
+        <h3>Meat Lover</h3>
+        <a href="#" class="btn-download view-pizza" data-category="meat">View pizzas</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="P-list" style="margin: 40px auto; max-width: 900px;">
+    <div id="classic" class="P-category" style="display: none;">
+      <h3>Classic Pizzas</h3>
+      <ul>
+        <li>Margherita</li>
+        <li>Quattro Formaggi</li>
+        <li>Marinara</li>
+        <li>Napoli</li>
+        <li>Capricciosa</li>
+      </ul>
+    </div>
+
+    <div id="veggie" class="P-category" style="display: none;">
+      <h3>Veggie Pizzas</h3>
+      <ul>
+        <li>Garden Delight</li>
+        <li>Spinach & Ricotta</li>
+        <li>Truffle Funghi</li>
+        <li>Roasted Veg Supreme</li>
+        <li>Pesto Veggie</li>
+      </ul>
+    </div>
+
+    <div id="meat" class="P-category" style="display: none;">
+      <h3>Meat Lover Pizzas</h3>
+      <ul>
+        <li>Pepperoni Inferno</li>
+        <li>BBQ Chicken</li>
+        <li>Sausage & Peppers</li>
+        <li>Smoky Bacon Ranch</li>
+        <li>Meat Feast</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Napoli’s Oven – Fresh from our oven to your table.</p>
+  </footer>  
